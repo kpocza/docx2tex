@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Codes>
+  <!-- Standard symbols -->
+  <Code Word="’" TeX="'" MathMode="No" />
+  <Code Word="‘" TeX="'" MathMode="No" />
+  <Code Word="$" TeX="!!!DOLLARSIGN!!!" MathMode="No" />
+  <Code Word="\" TeX="\backslash" MathMode="Switch" />
+  <Code Word="#" TeX="\#" MathMode="No" />
+  <Code Word="{" TeX="\{" MathMode="No" />
+  <Code Word="}" TeX="\}" MathMode="No" />
+  <Code Word="[" TeX="[" MathMode="Switch" />
+  <Code Word="]" TeX="]" MathMode="Switch" />
+  <Code Word="%" TeX="\%" MathMode="No" />
+  <Code Word="&amp;" TeX="\&amp;" MathMode="No" />
+  <Code Word="~" TeX="\~" MathMode="No" />
+  <Code Word="_" TeX="\_" MathMode="No" />
+  <Code Word="^" TeX="\^{}" MathMode="No" />
+  <Code Word="–" TeX="-" MathMode="No" />
+  <Code Word="—" TeX="-" MathMode="No" />
+  <Code Word="“" TeX="&quot;\," MathMode="No" />
+  <Code Word="„" TeX="&quot;\," MathMode="No" />
+  <Code Word="”" TeX="&quot;" MathMode="No" />
+  <Code Word="&lt;" TeX="&lt;" MathMode="Switch" />
+  <Code Word="&gt;" TeX="&gt;" MathMode="Switch" />
+
+  <!-- Math operators -->
+  <Code Word="±" TeX="\pm " MathMode="Yes" />
+  <Code Word="∞" TeX="\infty " MathMode="Yes" />
+  <Code Word="=" TeX="=" MathMode="Yes" />
+  <Code Word="≠" TeX="\ne " MathMode="Yes" />
+  <Code Word="~" TeX="\sim " MathMode="Yes" />
+  <Code Word="×" TeX="\times " MathMode="Yes,Switch" />
+  <Code Word="÷" TeX="\div " MathMode="Yes" />
+  <Code Word="!" TeX="!" MathMode="Yes" />
+  <Code Word="≪" TeX="\ll " MathMode="Yes" />
+  <Code Word="≫" TeX="\gg " MathMode="Yes" />
+  <Code Word="≤" TeX="\le " MathMode="Yes" />
+  <Code Word="≥" TeX="\ge " MathMode="Yes" />
+  <Code Word="∓" TeX="\mp " MathMode="Yes" />
+  <Code Word="≅" TeX="\cong " MathMode="Yes" />
+  <Code Word="≈" TeX="\approx " MathMode="Yes" />
+  <Code Word="≡" TeX="\equiv " MathMode="Yes" />
+  <Code Word="∀" TeX="\forall " MathMode="Yes" />
+  <Code Word="∁" TeX="\complement " MathMode="Yes" Comment="amssymb"/>
+  <Code Word="∂" TeX="\partial " MathMode="Yes" />
+  <Code Word="∪" TeX="\cup " MathMode="Yes" />
+  <Code Word="∩" TeX="\cap " MathMode="Yes" />
+  <Code Word="∅" TeX="\emptyset " MathMode="Yes" />
+  <Code Word="%" TeX="\%" MathMode="Yes" />
+  <Code Word="°" TeX="deg" MathMode="Yes" Comment="TODO"/>
+  <Code Word="℉" TeX="degF" MathMode="Yes" Comment="TODO"/>
+  <Code Word="℃" TeX="degC" MathMode="Yes" Comment="TODO"/>
+  <Code Word="∇" TeX="\triangledown " MathMode="Yes" Comment="amssymb"/>
+  <Code Word="∃" TeX="\exists " MathMode="Yes" />
+  <Code Word="∄" TeX="\nexists " MathMode="Yes" Comment="amssymb"/>
+  <Code Word="∋" TeX="\ni " MathMode="Yes" />
+  <Code Word="←" TeX="\gets " MathMode="Yes" />
+  <Code Word="↑" TeX="\uparrow " MathMode="Yes" />
+  <Code Word="→" TeX="\to " MathMode="Yes" />
+  <Code Word="↓" TeX="\downarrow " MathMode="Yes" />
+  <Code Word="↔" TeX="\leftrightarrow " MathMode="Yes" />
+  <Code Word="≝" TeX="=" MathMode="Yes" Comment="TODO"/>
+  <Code Word="≞" TeX="=" MathMode="Yes" Comment="TODO"/>
+  <Code Word="≜" TeX="=" MathMode="Yes" Comment="TODO"/>
+  <Code Word="⊕" TeX="\oplus " MathMode="Yes" />
+  <Code Word="⋅" TeX="\cdot " MathMode="Yes" />
+  <Code Word="…" TeX="\ldots " MathMode="Yes,No" />
+  <Code Word="∴" TeX="" MathMode="Yes" Comment="TODO" />
+  <Code Word="*" TeX="" MathMode="Yes" Comment="TODO" />
+  <Code Word="∙" TeX="\cdot " MathMode="Yes" />
+  <Code Word="⋮" TeX="\vdots " MathMode="Yes" />
+  <Code Word="⋯" TeX="\cdots " MathMode="Yes" />
+  <Code Word="⋰" TeX="" MathMode="Yes" Comment="TODO" />
+  <Code Word="⋱" TeX="\ddots " MathMode="Yes" />
+  <Code Word="ℵ" TeX="" MathMode="Yes" Comment="TODO" />
+  <Code Word="ℶ" TeX="" MathMode="Yes" Comment="TODO" />
+  <Code Word="∎" TeX="" MathMode="Yes" Comment="TODO" />
+
+  <!-- Greek letters -->
+  <Code Word="α" TeX="\alpha " MathMode="Yes" />
+  <Code Word="β" TeX="\beta " MathMode="Yes" />
+  <Code Word="γ" TeX="\gamma " MathMode="Yes" />
+  <Code Word="δ" TeX="\delta " MathMode="Yes" />
+  <Code Word="ε" TeX="\epsilon " MathMode="Yes" />
+  <Code Word="ϵ" TeX="\varepsilon " MathMode="Yes" />
+  <Code Word="ζ" TeX="\zeta " MathMode="Yes" />
+  <Code Word="η" TeX="\eta " MathMode="Yes" />
+  <Code Word="θ" TeX="\theta " MathMode="Yes" />
+  <Code Word="ϑ" TeX="\vartheta " MathMode="Yes" />
+  <Code Word="ι" TeX="\iota " MathMode="Yes" />
+  <Code Word="κ" TeX="\kappa " MathMode="Yes" />
+  <Code Word="λ" TeX="\lambda " MathMode="Yes" />
+  <Code Word="μ" TeX="\mu " MathMode="Yes" />
+  <Code Word="ν" TeX="\nu " MathMode="Yes" />
+  <Code Word="ξ" TeX="\xi " MathMode="Yes" />
+  <Code Word="ο" TeX="\o " MathMode="Yes" />
+  <Code Word="π" TeX="\pi " MathMode="Yes" />
+  <Code Word="ϖ" TeX="\varpi " MathMode="Yes" />
+  <Code Word="ρ" TeX="\rho " MathMode="Yes" />
+  <Code Word="ϱ" TeX="\varrho " MathMode="Yes" />
+  <Code Word="σ" TeX="\sigma " MathMode="Yes" />
+  <Code Word="ς" TeX="\varsigma " MathMode="Yes" />
+  <Code Word="τ" TeX="\tau " MathMode="Yes" />
+  <Code Word="υ" TeX="\upsilon " MathMode="Yes" />
+  <Code Word="φ" TeX="\phi " MathMode="Yes" />
+  <Code Word="ϕ" TeX="\varphi " MathMode="Yes" />
+  <Code Word="χ" TeX="\chi " MathMode="Yes" />
+  <Code Word="ψ" TeX="\psi " MathMode="Yes" />
+  <Code Word="ω" TeX="\omega " MathMode="Yes" />
+  <Code Word="Γ" TeX="\Gamma " MathMode="Yes" />
+  <Code Word="∆" TeX="\Delta " MathMode="Yes" />
+  <Code Word="Δ" TeX="\Delta " MathMode="Yes" />
+  <Code Word="Θ" TeX="\Theta " MathMode="Yes" />
+  <Code Word="Λ" TeX="\Lambda " MathMode="Yes" />
+  <Code Word="Ξ" TeX="\Xi " MathMode="Yes" />
+  <Code Word="Π" TeX="\Pi " MathMode="Yes" />
+  <Code Word="Σ" TeX="\Sigma " MathMode="Yes" />
+  <Code Word="Υ" TeX="\Upsilon " MathMode="Yes" />
+  <Code Word="Φ" TeX="\Phi " MathMode="Yes" />
+  <Code Word="Ψ" TeX="\Psi " MathMode="Yes" />
+  <Code Word="Ω" TeX="\Omega " MathMode="Yes" />
+
+</Codes>

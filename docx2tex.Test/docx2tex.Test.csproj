@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2CE07F8D-516D-45C8-9996-911123FA2920}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>docx2tex.Test</RootNamespace>
+    <AssemblyName>docx2tex.Test</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Docx2Tex.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AuthoringTests.txt" />
+    <Content Include="Expected\testmacs\media\image4.png" />
+    <Content Include="Expected\testtug\media\image3.png" />
+    <Content Include="Expected\test\media\image1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Expected\testcscs\media\image1.eps" />
+    <None Include="Expected\testcscs\media\image1.wmf" />
+    <None Include="Expected\testcscs\media\image2.eps" />
+    <None Include="Expected\testcscs\media\image2.wmf" />
+    <None Include="Expected\testcscs\regression-test-final2.tex" />
+    <None Include="Expected\testeq\eqtest.tex" />
+    <None Include="Expected\testmacs\macs_secdistr_draft.tex" />
+    <None Include="Expected\testmacs\media\image1.emf" />
+    <None Include="Expected\testmacs\media\image1.eps" />
+    <None Include="Expected\testmacs\media\image2.emf" />
+    <None Include="Expected\testmacs\media\image2.eps" />
+    <None Include="Expected\testmacs\media\image3.emf" />
+    <None Include="Expected\testmacs\media\image3.eps" />
+    <None Include="Expected\testmacs\media\image4.eps" />
+    <None Include="Expected\testtug\docx2tex.tex" />
+    <None Include="Expected\testtug\media\image1.emf" />
+    <None Include="Expected\testtug\media\image1.eps" />
+    <None Include="Expected\testtug\media\image2.emf" />
+    <None Include="Expected\testtug\media\image2.eps" />
+    <None Include="Expected\testtug\media\image3.eps" />
+    <None Include="Expected\test\example.tex" />
+    <None Include="Expected\test\media\image1.eps" />
+    <None Include="Input\testcscs\regression-test-final2.docx" />
+    <None Include="Input\testeq\eqtest.docx" />
+    <None Include="Input\testmacs\MACS_SecDistr_draft.docx" />
+    <None Include="Input\testmacs\MACS_SecDistr_draft.docx2texConfig" />
+    <None Include="Input\testtug\docx2tex.docx" />
+    <None Include="Input\test\example.docx" />
+    <None Include="Output\testcscs\l.ps1" />
+    <None Include="Output\testcscs\p.ps1" />
+    <None Include="Output\testtug\l.ps1" />
+    <None Include="Output\testtug\p.ps1" />
+    <None Include="Output\test\l.ps1" />
+    <None Include="Output\test\p.ps1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Expected\testeq\media\" />
+    <Folder Include="Output\testeq\" />
+    <Folder Include="Output\testmacs\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

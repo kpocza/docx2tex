@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Docx2TexConfig xmlns:xsi="http://kpocza.net/docx2tex" xmlns:xsd="http://kpocza.net/docx2tex">
+  <StyleMap 
+    Section="lncsheading1" 
+    SubSection="lncsheading2" 
+    SubSubSection="lncsheading3" 
+    Verbatim="lncsprogramcode" />
+</Docx2TexConfig>

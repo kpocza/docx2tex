@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<InputEncs>
+  <InputEnc inputenc="ascii"  encoding="us-ascii"   description="Standard ASCII" />
+  <InputEnc inputenc="latin1" encoding="iso-8859-1" description="Western European (ISO-8859-1 - Latin 1)" />
+  <InputEnc inputenc="latin2" encoding="iso-8859-2" description="Central European (ISO-8859-2 - Latin 2)" />
+  <InputEnc inputenc="latin3" encoding="iso-8859-3" description="Esperanto, Galician, Maltese, and Turkish (ISO-8859-3 - Latin 3)" />
+  <InputEnc inputenc="latin4" encoding="iso-8859-4" description="Scandinavia and Baltic (ISO-8859-4 - Latin 4)" />
+  <InputEnc inputenc="utf8"  encoding="utf-8"      description="UTF-8 (8 bit, variable length, Unicode, LE)" />
+  <!--<InputEnc inputenc="utf16" encoding="utf-16"     description="UTF-16 (16 bit, fixed length, Unicode, LE)" />-->
+</InputEncs>

@@ -1,0 +1,33 @@
+﻿<Window x:Class="docx2tex.UI.MainForm"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="docx2tex User Interface" Height="600" Width="800"
+    Icon="Images\docx2texIcon.png" ResizeMode="NoResize" Closing="Window_Closing">
+    
+    <DockPanel LastChildFill="True">
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="File">
+                <MenuItem Header="Exit" Name="mnuExit" Click="mnuExit_Click" />
+            </MenuItem>
+            <MenuItem Header="Configuration">
+                <MenuItem Header="Document Level" Name="mnuConfDocument" Click="mnuConfDocument_Click" />
+                <Separator />
+                <MenuItem Header="User Level" Name="mnuConfUser" Click="mnuConfUser_Click"/>
+                <Separator />
+                <MenuItem Header="System Level" Name="mnuConfSystem" Click="mnuConfSystem_Click"/>
+            </MenuItem>
+            <MenuItem Header="Conversion" Name="mnuConversion">
+                <MenuItem Header="New conversion" Name="mnuNewConversion" Click="mnuNewConversion_Click" />
+                <Separator Name="mnuConversionSeparator" />
+            </MenuItem>
+        </Menu>
+        <Grid Name="grdCenter">
+            <Grid.Background>
+                <ImageBrush ImageSource="Images\docx2texIcon.png" Stretch="Uniform" Opacity="0.4" />
+            </Grid.Background>
+            <Grid.RowDefinitions>
+                <RowDefinition Name="pnlCenterRow" Height="*" />
+            </Grid.RowDefinitions>
+        </Grid>
+    </DockPanel>
+</Window>

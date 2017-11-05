@@ -1,0 +1,563 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[latin2]{inputenc}
+\usepackage{graphicx}
+\usepackage{ulem}
+\usepackage{amsmath}
+\begin{document}
+\section{Heading text}\label{section:_Ref186547407}
+This is a \textit{$^{sentence}$}\textbf{\textit{ that}} 
+\underline{contains} text \textbf{\textit{\underline{with}}} 
+\sout{different} $_{formatting}$.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=10.52cm,height=8.41cm]{media/image1.eps}
+\caption{\label{figure:_Ref186544261}: Figure caption}
+\end{figure}
+
+
+
+Reference to the figure: \ref{figure:_Ref186544261}.
+
+\newcounter{numberedCntA}
+\begin{enumerate}
+\item First
+\item Second
+\item Third
+\begin{enumerate}
+\item First
+\item Second
+\item Third
+\end{enumerate}
+\item Fourth
+\setcounter{numberedCntA}{\theenumi}
+\end{enumerate}
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+1 & 2 \\
+\hline
+3 & 4 \\
+\hline
+\end{tabular}
+\caption{\label{table:_Ref186545972}: caption}
+\end{table}
+
+Table Caption: \ref{table:_Ref186545972}.
+
+\subsection{This is a second heading}\label{section:_Ref186547508}
+árvíztûrõ tükörfúrógép
+
+ÁRVíZTÛRÕ TÜKÖRFÚRÓGÉP
+
+\underline{Underlined} 
+
+\textit{italic} 
+
+\textbf{fat} 
+
+\textit{\underline{underlineditalic}} 
+
+\textbf{\textit{italicfat}} 
+
+\textbf{\underline{underlinedfat}} 
+
+\textbf{\textit{\underline{underlineditalicfat}}}
+
+\newcounter{numberedCntB}
+\begin{enumerate}
+\item egy
+\item kettõ
+\item három
+\begin{enumerate}
+\item a
+\item b
+\item c
+\end{enumerate}
+\item négy
+\setcounter{numberedCntB}{\theenumi}
+\end{enumerate}
+
+
+-----------------------------------
+
+
+
+\begin{enumerate}
+\setcounter{enumi}{\thenumberedCntB}
+\item aaa
+\item bbb
+\item ccc
+\setcounter{numberedCntB}{\theenumi}
+\end{enumerate}
+
+
+\subsubsection{This is a third heading}\label{section:_Ref186547515}
+
+
+\begin{itemize}
+\item a
+\item b
+\begin{itemize}
+\item b1
+\begin{itemize}
+\item b1A
+\item b2A
+\end{itemize}
+\item b2
+\item b3
+\end{itemize}
+\item c
+\item d
+\end{itemize}
+
+
+
+
+\newcounter{numberedCntD}
+\begin{enumerate}
+\item AAA
+\item BBB
+\item CCC
+\setcounter{numberedCntD}{\theenumi}
+\end{enumerate}
+
+
+$<$$>$ as'q \ldots \# $\backslash$ \{ \} \% \~ \_ \^{} \& 
+\$ "\,"
+
+\textsc{efg}
+
+\textsc{hijk}
+
+\sout{A }\xout{b }$^{cdef }$$_{defin}$
+
+
+
+Ez egy hosszú paragraph, amelyet balra igazítottunk. Még írok ide 
+cuccot, hogy látszódjon a dolog, legalább is word-ben.
+
+
+
+\begin{flushright}Ez egy hosszú paragraph, amelyet jobbra igazítottunk. 
+Még írok ide, hogy látszódjon a dolog, legalább is word-ben.
+\end{flushright}
+
+
+
+\begin{center}Ez egy hosszú paragraph, amelyet centerre igazítottunk. 
+Még írok ide, hogy látszódjon a dolog, legalább is word-ben.
+\end{center}
+
+
+
+
+
+Ez egy hosszú paragraph, amelyet justify igazítottunk. Még írok ide, 
+hogy látszódjon a dolog, legalább is word-ben. Írok még egy sort, hogy 
+teljesen korrektül látszódjon a formázás. Nézzük meg, hogy mi történik 
+latex-ben.
+
+Section: \ref{section:_Ref186547407}.
+
+SubSection: \ref{section:_Ref186547508}.
+
+SubSubSection:\ref{section:_Ref186547515}.
+
+Math formulas:
+
+$B(a)=x+\sqrt[3]{a}$\\
+
+
+$\sum_{a}^{b}{c} \prod_{n=1..k}{n}$\\
+
+
+The adaptive fit of a phenotype to its environment follows from the 
+degree to which selection and mutation act on that phenotype. We may 
+view vital rates (i.e., age-specific survival and reproduction) as 
+adaptations, each of which is a complex phenotype determined by numerous 
+genetic and environmental factors. Because the strength of selection 
+declines with age (HAMILTON 1966), we expect differential adaptation 
+leading towards relatively lower rates of early-age mortality and, all 
+else being equal, greater rates of reproduction at younger ages. This 
+perspective views senescence as a manifestation of an age-related loss 
+in adaptation. If mutational effects are themselves dependent upon the 
+degree of adaptation, as suggested by \textsc{Fisher} (1958), then the 
+effects of mutations will depend upon the age at which they act. 
+Mutations will tend to be most deleterious when purifying selection 
+against the mutational load is at its greatest. This positive 
+association between the influx of deleterious mutational load (greatest 
+at early age) and purifying selection (also greatest at early age) will 
+tend to dampen the age-related changes in vital rates at 
+mutation-selection equilibrium. In other words, negative feedback 
+between mutation and selection will cause less senescence than is 
+predicted by the standard mutation accumulation model of aging. We 
+explore this consequence of Fisher's model on the evolution of 
+age-specific mortality using numerical simulations. 
+
+\textbf{Adaptive Geometry}: \textsc{Fisher} (1958) argued that 
+because fitness is the result of great physiological and environmental 
+complexity, the trajectory of trait adaptation towards an optimum will 
+be constrained to a serial process of small improvements. To illustrate 
+this point, he introduced a heuristic "\,geometric model of adaptation". 
+This model imagines a phenotype represented by a point $P$ that is 
+separated from an optimum $O$ in $n$ -dimensional phenospace by some 
+Euclidian distance $z$ (Figure 1), where \textit{n} is the number of 
+traits that affect the phenotype and are under selection. This 
+phenospace represents the entire universe of possible multivariate 
+phenotypic configurations. As all points at some distance from the 
+optimum are equivalent, the phenotype can be imagined as a circle, 
+sphere, or, more generally, a hypersphere with a characteristic radius 
+equal to $z$. A change in the phenotype, such as might follow from a 
+mutation, will move the genotype away from $P$ by some amount $r$. 
+Fisher noted that the probability that such a change moves the phenotype 
+closer to the optimum (thereby increasing fitness) decreases with 
+increasing $r$ and $n$. Specifically, the probability that a 
+mutation is beneficial is approximated by the cumulative standard normal 
+distribution,
+
+\ \ \ \ $B(v)\cong \frac{1}{\sqrt{2\pi }}\int_{v}^{\infty 
+}{e^{-\frac{t^{2}}{2}}dt}$\ \ \ \ (1),
+
+where $=\frac{r\sqrt{n}}{z}$ , the effective size of the mutation, and 
+$n$, the dimensionality of the trait, is very large (FISHER 1958; 
+KIMURA 1983; LEIGH 1987; ORR 1998; RICE 1990). Fisher's model offers a 
+useful heuristic means with which to think about the distribution of 
+mutational effects. 
+
+\textbf{Age-structure complicates adaptive geometry:} Here, we extend 
+Fisher's model to explore how the distribution of mutational effects 
+might change with age and with the complexity of vital rates. The fit of 
+a phenotype to a particular environment determines the radius of the 
+adaptive geometry. Because the selection that drives adaptation is 
+attenuated with age, more deleterious age-specific mutations are allowed 
+to accumulate at late age (HAMILTON 1966). We expect that the 
+age-specific radii of phenotypes \textit{P} will consequently increase 
+with age, becoming less well adapted to their age-specific environments. 
+We extend Fisher's heuristic model by adding a temporal dimension 
+\textit{x}. The result is a series of hyperspheres, each representing 
+the $n_{x}$-dimensional adaptive geometry specific to a particular 
+age class. Each age-specific hypersphere has some radius, $z_{x}$, 
+which follows from the degree of adaptation characteristic of the 
+age-specific phenotypes. All else being equal, these radii increase with 
+age after the age of reproductive maturity is reached because the 
+intensity of selection lessens with age. Because selection for survival 
+is not expected to change prior to reproductive maturity, all 
+pre-reproductive hyperspheres will have the same radii provided that the 
+influx of mutational effects does not change (this assumes that $n_{x}
+$ is constant - see below).
+
+Previous applications of Fisher's model illustrate the adaptive geometry 
+of a population using the simplest two-dimensional projection of the 
+hypersphere, the circle (e.g., HARTL and TAUBES 1996; ORR 1998; ORR 
+2006; POON and OTTO 2000; WAXMAN 2006). In keeping with this tradition, 
+we imagine a series of circles with radii that increase with age. We 
+standardize the age-specific radius for dimensionality by dividing each 
+radius $z_{x}$ by the square root of $n_{x}$ (Equation 1). When we 
+align the age-ranked circles that represent the radii of reproductive 
+ages along the temporal axis that runs perpendicular to the age-specific 
+radii, we form a truncated cone (a conical frustum). As the intensity of 
+selection on mortality is expected to be constant for all 
+pre-reproductive ages (HAMILTON 1966) and provided that complexity is 
+constant, the circles for these earliest age-classes will form a column 
+with a radius that is equal to the smallest radius of the frustum 
+(Figure 2). We define the adaptive geometry of the whole life course by 
+appending the pre-reproductive cylinder to the frustum formed by the 
+reproductively mature age-classes. Taken together, the age-specific 
+shape of the adaptive geometry appears as a funnel in a 
+three-dimensional projection. The adaptive geometry of a phenotype at a 
+particular age is recovered by taking a cross-section of the funnel 
+perpendicular to the temporal axis.
+
+\textbf{Geometric interpretations of age-specific mutational effects:} 
+At a single age, a mutational effect on this phenospatial scale can be 
+defined by an $n_{x}$-dimensional vector with Euclidean length 
+\textit{r}. However, the effect of a mutation over all ages is far 
+more complex because a single mutation can have an effect on the 
+phenospace at any or all ages. This effect can vary freely in magnitude 
+and direction, although the tendency to do so depends upon the degree to 
+which an organism's physiology and environment are integrated across 
+ages. In light of the model shown in Figure 2, we can visualize a 
+mutation with identical phenospatial effects at all ages as a line 
+running parallel to the funnel surface. Aside from its effects on this 
+multidimensional phenospatial scale, a mutation may also have an effect 
+on the univariate fitness scale. This is a change in the spatial 
+distance $z$ between the optimum and the new phenotype's adaptive 
+position \textit{P}. A mutation is consistently beneficial (or 
+deleterious) if it is always within (or always outside) the surface of 
+the volume. These types of mutations will contribute to positive fitness 
+correlations across ages. Mutational effects that enter and exit the 
+volume at different places along \textit{x} will contribute to 
+negative fitness correlations across ages - a requirement for 
+antagonistically pleiotropic mechanisms for the evolution of senescence. 
+
+
+In the \textit{window-effect} model (CHARLESWORTH 2001), the effects 
+of a mutation are neutral until some age$ x$, have some constant 
+effect over $\Delta x$, and then return to neutrality. We can 
+visualize the effect of this form of mutational effect by imagining a 
+line traveling along the surface of the funnel (Figure 3). At some point 
+that corresponds to the earliest age defining the window, the line juts 
+outwards (a deleterious mutational effect) or inwards (a beneficial 
+mutational effect) in a direction perpendicular to the temporal axis. 
+After traveling some distance corresponding to the magnitude of the 
+effect (the greater the distance, the greater the effect), the line then 
+resumes a course parallel to the surface of the funnel. Upon reaching 
+the end of the window (i.e., the age of last effect), the line returns 
+to the surface of the funnel and continues to run uninterrupted along 
+the surface of the funnel to its terminus. With continuous-time models, 
+the window of time becomes infinitesimally small (i.e., $\Delta x\to 0
+$) and the number of age classes becomes infinitely large. We can 
+attribute the frequent use of the window model in theoretical 
+explorations of aging to its apparent simplicity: the duration of the 
+effects of mutations is constrained to the size of the window, which can 
+define a single age-class. There can be no genetic correlations across 
+ages either among mutations or among the genetic variants that segregate 
+at mutation-selection equilibrium. As a result, it is straightforward to 
+predict evolutionary trajectories. We consider this model in our 
+simulations.
+
+\textbf{Numerical simulations of age-specific mortality: }We wished to 
+understand how these adaptation-dependent mutational effects influence 
+the evolution of senescence as reflected by declines in survival rates 
+with age. Because we are particularly interested in the effect of 
+mutations on age-specific mortality, we set the within-age class 
+variance in reproductive output to zero, thereby assuming that the 
+variation in age-specific fitness depends entirely upon three 
+factors-the variation in age-specific survival, reproduction as a 
+function of age, and the age-structure of the population. This allowed 
+us to equate the concept of adaptive geometry to a geometry of 
+age-specific survival. We viewed survival at each age (or its negative 
+natural logarithm, mortality) as independent phenotypes made up of many 
+($n_{x}$) traits under selection. The simultaneous effects of 
+window-effect mutations (i.e., a given mutation affects one and only one 
+of the non-overlapping windows) and selection upon the mean and variance 
+of age-specific survival at mutation-selection equilibrium were explored 
+using deterministic simulation models of an age-structured infinite-size 
+population coded in R 2.5.1 (R DEVELOPMENT CORE TEAM 2007). Our goal was 
+to explore 1) how the mean and variance of mortality (defined as the 
+negative logarithm of survival rates) evolve and 2) how the mean and 
+variance of mutational effects on mortality change with age when the 
+effects of age-specific mutations depend upon the adaptive fit of 
+individuals at each age.
+
+We imagined an infinite population that experienced cycles of 
+reproduction, mutation, and viability selection for some time $T$ 
+sufficient to reach demographic and genetic equilibria. The demographic 
+structure of a population with $X$\textit{ }age classes at time $t
+$ was described by the probability density function $\pi _{y,t}$, 
+where $y$\textit{ }is the age of the cohort. There were $X-1$ 
+survival traits; each determined the probability that an individual 
+successfully transitioned from age $x$ to age $x+1$. Mutations 
+acted on single age classes, corresponding to a window effect model of 
+mutation with $\Delta x=1$. Each individual that successfully 
+transitioned from age $x$ to age $x+1$ contributed offspring to the 
+offspring pool with age-specific fecundity $m_{x}$. The probability 
+at time \textit{t} that an individual belonging to $y$\textit{ }
+has an age \textit{x-}specific phenotype (the distance to the 
+age-specific optimum) equal to $z$ is $p_{z,x,y,t}$. Cohorts 
+expressed these phenotypes when $y=x$. Otherwise the phenotypes were 
+latent, having been expressed before (if $y>x$) or waiting to be 
+expressed in the future ($y<x$ ). We defined survival as an 
+exponential function of phenospatial distances, $P_{z}=e^{-z}$, 
+because survivorship mutations are usually considered to act additively 
+on the log scale (CHARLESWORTH 1994; HAMILTON 1966 - but see BAUDISCH 
+2005). Thus, the distance of a phenotype from the optimum defined its 
+age-specific mortality exactly, $z=\mu _{x}=-\ln (P_{z})$. 
+
+We explored the case of four age classes ($X=4$) with three 
+transition traits determining the survival probabilities. The distance $
+z$ (mortality) ranged from 0.0025 to 10.0025 and was binned into 
+classes of size 0.005. Thus, there were 2000 possible phenotypes 
+available to each individual at each age $x$. At any time $t$ there 
+were nine phenotypic distributions (three cohorts each with three 
+age-specific phenotypes), we represented each of these with a vertical 
+vector $p_{x,y,t}$. This is the distribution of distance $z$ for 
+age $x$ among cohort $y$ at time $t$. Initially, the population's 
+age distribution and age-specific breeding value distributions were 
+uniform: $\pi _{x,1}=\frac{1}{X} $and $p_{z,x,y,1}=\frac{1}{2000}$ 
+for all $x,y,$\textit{ }and\textit{ }$z$. Differently put, 
+age-specific survival within ages was highly variable but there was no 
+mean change in survival with age (i.e., no initial senescence). 
+
+A long held conclusion of life history theory is that age-related 
+increases in fecundity will mitigate (but not completely eliminate) the 
+evolution of senescence by increasing the relative intensity of 
+selection on late-age survival (WILLIAMS 1957). To explore the effect of 
+varying late-age selection on survival, we considered three different 
+reproductive functions, $m_{1}=\lbrace 0,1,1\rbrace $, $m_{2}=\lbrace 
+0,1,2\rbrace , $and $m_{3}=\lbrace 0,1,4\rbrace $ with the expectation 
+that age-specific selection will decline with age most with $m_{1}$ 
+and least with $m_{3}$. In each treatment, reproduction was delayed 
+until after the second transition. This provided one test of our 
+simulation model: because the decline in selection associated with age 
+was deferred until the onset of reproduction, we expected no change in 
+equilibrium mortality associated with the first two transitions when the 
+mortality effects of mutations were held constant. Any differences in 
+mortality rates at mutation-selection equilibrium between the first two 
+transitions could not be due to differences in selection. We designate 
+the three age-specific survival traits as: juvenile survival 
+(transitioning from $x=1 to 2$), early adult survival (from $x=2 to 
+3$), and late adult survival (from $x=3 to 4$). 
+
+\textbf{Viability selection: }Every cohort had $X-1$ phenotypic 
+distributions, each corresponding to mortality at a different age. At 
+each time step, selection changed the phenotypic distributions in each 
+cohort that corresponded to mortality at that time, $x=y$. Following 
+our definition of bins and the survival function, age-specific survival 
+could range from a high of 99.75\% to a low of less than 0.00005\%. We 
+defined a vertical vector $s$ in which each element corresponds to the 
+survival of a phenotype, $s=e^{-z}$, where $z=\lbrace 
+\frac{1}{400},\frac{3}{400} ,\cdots , \frac{4001}{400}\rbrace $. The 
+distributions of phenotypes currently under selection are described by $
+p_{y,y,t}$. After selection, these distributions were re-weighted by 
+their phenotype-specific viability, 
+
+\ \ \ \ $p_{y,y+1,t+1}=\frac{s\cdot p_{y,y,t}}{s^{T}\cdot p_{y,y,t}}$
+\ \ \ \ (2).
+
+Other distributions $x\ne y$ were shielded from selection. Thus \ \ \ 
+\ 
+
+\ \ \ \ $p_{x,y+1,t+1}=p_{x,y,t}$\ \ \ \ (3).
+
+We standardized the age-distributions to correct for mortality and the 
+production of new offspring. First, we found the un-standardized size of 
+each cohort at time $t+1$ that followed from viability selection, 
+
+\ \ \ \ $\pi _{y+1,t+1}^{'}=\pi _{y,t}\times s^{T}\cdot p_{y,y,t}$\ \ 
+\ \ (4).
+
+The size of each new cohort $y=1$ follows from the previous 
+age-structure $\pi _{y,t}$ and the age-specific fecundity function $m
+$, $\pi _{1,t+1}^{'}=\sum_{y=1}^{Y}{\pi _{y,t}\cdot m_{y}}$. We 
+standardize the new age-structure to account for this new cohort,
+
+\ \ \ \ $\pi _{y,t+1}=\frac{\pi _{y,t+1}^{'}}{\sum_{y=1}^{Y}{\pi 
+_{y,t+1}}}$\ \ \ \ (5).
+
+\textbf{Reproduction and mutation: }All surviving individuals 
+reproduced asexually at the end of each time period \textit{t.} 
+Phenotypes were assumed to be completely heritable, excepting the 
+effects of mutation (like POON and OTTO (2000),we ignore environmental 
+variation). To model the distribution of mutation effects, we followed 
+closely the mutation model of \textsc{Poon} and \textsc{Otto} 
+(2000). The effect of mutation on all phenotypic traits was assumed to 
+be distributed as a set of $n$ independent reflected exponentials 
+(symmetric about zero) each with the same parameter $\lambda $. Under 
+this assumption, the magnitude $r$ was distributed as 
+
+\ \ \ \ $p(r,n)=\frac{\lambda ^{n}e^{-\lambda r}r^{n-1}}{\Gamma (n)}$
+\ \ \ \ (6),
+
+and the angle $\theta $ as
+
+\ \ \ \ $p(\theta ,n)=c^{'}\sin ^{n-2}\theta $,\ \ \ \ (7),
+
+where
+
+\ \ \ \ $c^{'}=\frac{\Gamma (\frac{n}{2})}{\sqrt{\pi }\Gamma \lbrack 
+\frac{1}{2}(n-1)\rbrack }$\ \ \ \ (7a).
+
+For some initial distance \textit{z}, mutational distance \textit{r
+}, and effective orientation \textit{?}, the distance of the changed 
+phenotype from the optimum was
+
+\ \ \ \ $z^{'}=\sqrt{z^{2}+r^{2}-2zr cos\theta }$\ \ \ \ (8).
+
+We re-arranged Equation 8 to find the angle of mutational effect that 
+caused the distance to transition from distance $z$ to $z^{'}$,
+
+\ \ \ \ $\theta (z,r,z^{'})=\cos 
+^{-1}(\frac{z^{2}+r^{2}-z^{'}^{2}}{2zr})$\ \ \ \ (9).
+
+We used Equations 6-9 to find the probability that a mutation at 
+distance $z$ would end up within some distance $\pm \frac{1}{400}$ 
+from every possible value of $z$.\textbf{ }The probability that a 
+mutation shifts the phenotype from $z$ to the interval $z^{'}\pm 
+\frac{1}{400}$ was
+
+\ \ \ \ $Pr\lbrace z+\Delta z-\frac{1}{400}<z^{'}<z+\Delta 
+z+\frac{1}{400}\rbrace =\int_{r=\Delta z}^{Z+z}{\int_{\theta 
+(z,r,z+\Delta z-\frac{1}{400})}^{\theta (z,r,z+\Delta 
+z+\frac{1}{400})}{p(r,n)p(\theta ,n)d\theta dr}}$\ \ \ \ (10). 
+
+Mutations with effect $r>Z+z$ caused the new phenotype to equal 
+\textit{Z}, making \textit{Z} an absorbing boundary. By applying 
+Equation 10 to all elements of $z$, we defined the probability 
+transition matrix for a single mutation $U(n_{x},\lambda )$. The 
+number of mutations $n^{}$ introduced in each offspring was 
+Poisson-distributed with parameter $u=1$, a value that conforms to 
+estimates of mutation rates in \textit{Drosophila} (HAAG-LIAUTARD
+\textit{ et al.} 2007). Taking account of the variation in the number 
+of mutations per time unit, the mutational probability transition matrix 
+was
+
+\ \ \ \ $U^{}(n_{x},\lambda )=\sum_{n^{}=0}^{\infty }{Pr(n^{})\times 
+\lbrack U(n_{x},\lambda )\rbrack ^{n^{}}}$\ \ \ \ (11). 
+
+Each cohort contributed to each age-specific \textit{pdf} of 
+phenotypes in proportion to the product of its current fecundity and 
+fractional representation of the population. Given the vertical vector 
+of phenotypic probabilities at time \textit{t}, $p_{x,y,t}$, the 
+\textit{pdf }of mortality phenotypes of the offspring cohort after 
+mutation specific to some age of expression \textit{x} was
+
+\ \ \ \ $p_{x,1,t+1}=U^{}(n_{x},\lambda ,u)\cdot \frac{\sum_{y}^{Y}{\pi 
+_{y,t}\cdot m_{y}\cdot p_{x,y,t}}}{\pi _{1,t+1}^{'}}$\ \ \ \ (12).
+
+The phenotypic effects of mutations are expected to be greatest with 
+high \textit{n} and low $\lambda $ (POON and OTTO 2000). To explore 
+the consequences of changing these mutational parameters on 
+mutation-selection equilibrium and mutation accumulation, we considered 
+each of $\lambda ?\lbrace 50,100,150,200\rbrace $. Complexity is a 
+central component of Fisher's geometric model and some studies have 
+suggested that the complexity of phenotypic traits may change as an 
+organism ages (KAPLAN\textit{ et al.} 1991; LIPSITZ and GOLDBERGER 
+1992 but see GOLDBERGER\textit{ et al.} 2002; VAILLANCOURT and NEWELL 
+2002). We investigated how complexity affected age-related changes in 
+mutational effects by considering a variety of age-specific functions of 
+$n$. First we considered the scenario in which $n$ is constant 
+across all ages (age-independent complexity), with$ n?\lbrace 
+10,15,20,25\rbrace $. In addition, we explored what happens when 
+complexity changes with age (age-dependent complexity). Specifically, we 
+considered what happens if 1) complexity increases between adult 
+age-classes, $n_{x}=\lbrace 10,10,20\rbrace $, 2) complexity decreases 
+between adult age-classes, $n_{x}=\lbrace 20,20,10\rbrace $, 3) 
+complexity increases between juvenile and adult age-classes, $
+n_{x}=\lbrace 10,20,20\rbrace $, and 4) complexity decreases between 
+juvenile and adult age-classes, $n_{x}=\lbrace 20,10,10\rbrace $. 
+Scenarios 1-2 were investigated to see if changes in complexity caused 
+qualitative shifts in the degree to which senescence evolves in 
+reproductive age classes. Scenarios 3-4 were investigated to see how 
+changes in complexity caused equilibrium mortality to diverge between 
+the juvenile and the early adult age classes (recall that selection for 
+both juvenile and early adult survival are equal because juveniles 
+cannot reproduce). 
+
+\textbf{Mutation-selection balance and mutation accumulation}:
+\textbf{ }All simulations were allowed to evolve for $T$ generations, 
+defined as the point at which none of the phenotypic distributions 
+deviated from those at generation $T-1$ to the resolution limit of R 
+2.5.1. These distributions defined the mutation-selection equilibrium 
+specific to the population with parameters $m_{x},n_{x},\lambda $ and $
+u$. We then removed selection from the populations by changing the 
+survival function to $P_{z}=1$ and allowing the populations to evolve 
+for an additional 50 time units. We attributed the changes in the mean 
+and variance of age-specific mortality between generations $T+50$ and 
+$T$ to the effects of \textit{de novo }mutation accumulation. 
+
+$\pm \infty =\ne \sim \times \div !?<\ll >\gg \le \ge \mp \cong \approx 
+\equiv \forall \complement \partial \sqrt{\sqrt[3]{\sqrt[4]{a}}}\cup 
+\cap \emptyset \%degdegFdegC\Delta \triangledown \exists \nexists \ni 
+\ni \gets \uparrow \to \downarrow \leftrightarrow \pm \alpha \beta 
+\gamma \delta \epsilon \varepsilon \theta \vartheta \mu \pi \rho \sigma 
+\tau \phi \omega \cdot \vdots \cdots \ddots $\\
+
+
+
+
+
+
+\end{document}

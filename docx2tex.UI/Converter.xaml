@@ -1,0 +1,54 @@
+﻿<UserControl x:Class="docx2tex.UI.Converter"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    
+    <UserControl.Resources>
+        <Style TargetType="{x:Type TextBox}">
+            <Style.Triggers>
+                <Trigger Property="Text" Value="">
+                    <Setter Property="Background" Value="{StaticResource NotSetBrush}"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </UserControl.Resources>
+
+    <DockPanel LastChildFill="True">
+        <StackPanel DockPanel.Dock="Top" Margin="5">
+            <DockPanel LastChildFill="True">
+                <Button DockPanel.Dock="Right" Width="22" Margin="2" Name="btnClose" Click="btnClose_Click">X</Button>
+                <Label>Source Word 2007 document path:</Label>
+            </DockPanel>
+            <DockPanel LastChildFill="True">
+                <Button DockPanel.Dock="Right" Name="btnSelectWord2k7Doc" Click="btnSelectWord2k7Doc_Click">...</Button>
+                <TextBox Name="txtSelectWord2k7Doc" />
+            </DockPanel>
+            
+            <Label>Destination LaTeX document path:</Label>
+            <DockPanel LastChildFill="True">
+                <Button DockPanel.Dock="Right" Name="btnSelectLaTeXDoc" Click="btnSelectLaTeXDoc_Click">...</Button>
+                <TextBox Name="txtSelectLaTeXDoc" />
+            </DockPanel>
+            <DockPanel LastChildFill="True">
+                <Button DockPanel.Dock="Right" Name="btnStartConversion" Click="btnStartConversion_Click">
+                    <Button.Content>Start conversion</Button.Content>
+                    <Button.Margin>
+                        <Thickness Top="4" />
+                    </Button.Margin>
+                </Button>
+                <Label Name="lblError" Foreground="Red" />
+            </DockPanel>
+        </StackPanel>
+
+        <ScrollViewer Name="scrLog">
+            <TextBox 
+                Grid.Column="0" Grid.Row="1" 
+                Background="Black" Foreground="LightGreen" FontFamily="Lucida Console" 
+                IsReadOnly="True" Name="txtScreen"
+                VerticalScrollBarVisibility="Auto" ScrollViewer.CanContentScroll="true">
+                <TextBox.Margin>
+                    <Thickness Left="6" Right="6" Bottom="6" />
+                </TextBox.Margin>
+            </TextBox>
+        </ScrollViewer>
+    </DockPanel>
+</UserControl>

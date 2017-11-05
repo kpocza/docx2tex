@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Docx2TexConfig xmlns:xsi="http://kpocza.net/docx2tex" xmlns:xsd="http://kpocza.net/docx2tex">
+  <Infra 
+    ImageMagickPath="c:\Program Files\ImageMagick-6.5.4-Q16\convert.exe" 
+    InputEnc="latin2"
+    DocumentClass="article"
+    FontSize="12pt"
+    PaperSize="a4paper">
+    <LineLength>72</LineLength>
+  </Infra>
+  <LaTeXTags 
+    Section="\section" 
+    SubSection="\subsection" 
+    SubSubSection="\subsubsection"
+    FigurePlacement="h"
+    TablePlacement="h" >
+    <Breaks 
+      Page="\newpage" 
+      Line="\\" />
+    <StylePair>
+      <Begin 
+        TextIt="\textit{" 
+        TextBf="\textbf{" 
+        Underline="\underline{" 
+        Sout="\sout{" 
+        Xout="\xout{" 
+        TextSc="\textsc{" 
+        TextC="\textsc{" 
+        SuperScript="$^{" 
+        SubScript="$_{" 
+        ParaFlushRight="\begin{flushright}" 
+        ParaCenter="\begin{center}" />
+      <End 
+        TextIt="}" 
+        TextBf="}" 
+        Underline="}" 
+        Sout="}" 
+        Xout="}" 
+        TextSc="}" 
+        TextC="}" 
+        SuperScript="}$" 
+        SubScript="}$" 
+        ParaFlushRight="\end{flushright}" 
+        ParaCenter="\end{center}" />
+    </StylePair>
+    <TagPair>
+      <Begin
+        Verbatim = "\begin{verbatim}"
+        Math = "$"
+        Figure = "\begin{figure}"
+        Enumerate = "\begin{enumerate}"
+        Itemize = "\begin{itemize}"
+        Table = "\begin{table}" />
+      <End 
+        Verbatim = "\end{verbatim}"
+        Math = "$"
+        Figure = "\end{figure}"
+        Enumerate = "\end{enumerate}"
+        Itemize = "\end{itemize}"
+        Table = "\end{table}" />
+    </TagPair>
+    <ProcessFigures>true</ProcessFigures>
+    <CenterFigures>true</CenterFigures>
+    <CenterTables>true</CenterTables>
+    <AllowContinuousLists>true</AllowContinuousLists>
+    <PutSectionReferences>true</PutSectionReferences>
+    <PutFigureReferences>true</PutFigureReferences>
+    <PutTableReferences>true</PutTableReferences>
+    <PutListingReferences>true</PutListingReferences>
+  </LaTeXTags>
+  <StyleMap 
+    Section="heading1" 
+    SubSection="heading2" 
+    SubSubSection="heading3" 
+    Verbatim="verbatim" />
+</Docx2TexConfig>

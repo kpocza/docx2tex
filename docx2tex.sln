@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{82C451F7-EC9E-4B1F-90A5-A2843571B46A}"
+	ProjectSection(SolutionItems) = preProject
+		LocalTestRun.testrunconfig = LocalTestRun.testrunconfig
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{0C086E83-0953-43C4-BD27-F5B95B0957FD}"
+	ProjectSection(SolutionItems) = preProject
+		Common\docx2texIcon.pdn = Common\docx2texIcon.pdn
+		Common\docx2texIcon.png = Common\docx2texIcon.png
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "docx2tex", "docx2tex\docx2tex.csproj", "{574BFC8E-2B47-47E0-B4DB-1F8B4423229E}"
+EndProject
+Project("{00000000-0000-0000-0000-000000000000}") = "docx2tex.Test", "docx2tex.Test\docx2tex.Test.csproj", "{2CE07F8D-516D-45C8-9996-911123FA2920}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "docx2tex.Library", "docx2tex.Library\docx2tex.Library.csproj", "{66DAF230-0815-4564-A1E1-BA244179192E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "docx2tex.UI", "docx2tex.UI\docx2tex.UI.csproj", "{95033673-5EE2-4ECC-8087-B79D67268B3C}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs02.codeplex.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = docx2tex.Test\\docx2tex.Test.csproj
+		SccProjectName1 = docx2tex.Test
+		SccLocalPath1 = docx2tex.Test
+		SccProjectUniqueName2 = docx2tex\\docx2tex.csproj
+		SccProjectName2 = docx2tex
+		SccLocalPath2 = docx2tex
+		SccProjectUniqueName3 = docx2tex.Library\\docx2tex.Library.csproj
+		SccProjectName3 = docx2tex.Library
+		SccLocalPath3 = docx2tex.Library
+		SccProjectUniqueName4 = docx2tex.UI\\docx2tex.UI.csproj
+		SccProjectName4 = docx2tex.UI
+		SccLocalPath4 = docx2tex.UI
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{574BFC8E-2B47-47E0-B4DB-1F8B4423229E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{574BFC8E-2B47-47E0-B4DB-1F8B4423229E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{574BFC8E-2B47-47E0-B4DB-1F8B4423229E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{574BFC8E-2B47-47E0-B4DB-1F8B4423229E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CE07F8D-516D-45C8-9996-911123FA2920}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CE07F8D-516D-45C8-9996-911123FA2920}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CE07F8D-516D-45C8-9996-911123FA2920}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CE07F8D-516D-45C8-9996-911123FA2920}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66DAF230-0815-4564-A1E1-BA244179192E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66DAF230-0815-4564-A1E1-BA244179192E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66DAF230-0815-4564-A1E1-BA244179192E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66DAF230-0815-4564-A1E1-BA244179192E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95033673-5EE2-4ECC-8087-B79D67268B3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95033673-5EE2-4ECC-8087-B79D67268B3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95033673-5EE2-4ECC-8087-B79D67268B3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95033673-5EE2-4ECC-8087-B79D67268B3C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
